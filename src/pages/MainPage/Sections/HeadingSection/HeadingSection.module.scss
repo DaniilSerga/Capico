@@ -1,0 +1,132 @@
+@import 'styles/colors';
+
+.sectionContainer {
+    z-index: 0;
+    position: relative;
+    padding: 0 50px 63px;
+    background-image: url('../../../../assets/images/headingBackground.webp');
+    background-position: center;
+    background-size: cover;
+}
+
+.background {
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+    width: 100%;
+    filter: blur(100px);
+    background-color: $shockingPink;
+    transform: translateY(150%);
+}
+
+.backgroundSecondary {
+    @extend .background;
+    transform: translate(60%, 200%);
+    background-color: blue;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.heading {
+    & > h1,
+    & > h2 {
+        color: $white;
+        font-size: 102px;
+        letter-spacing: -2px;
+        line-height: 95%;
+        font-weight: 400;
+    }
+
+    & > h2 {
+        background: $gradiend100;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 15px;
+    width: fit-content;
+    padding: 15px 22px 11px 57px; 
+    color: $white;
+    font-size: 28px;
+    font-weight: 600;
+    background-color: $grape;
+    outline: none;
+    border: none;
+    border-radius: 42px;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: $blueViolet;
+    }
+}
+
+.badgesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    margin-top: 145px;
+
+    & > h3 {
+        color: $white;
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+.badgesList {
+    display: flex;
+    justify-content: space-around;
+    gap: 13px;
+
+    & > li:not(:last-child):hover > div:first-child {
+        border: 1px solid $blueViolet;
+        box-shadow: 
+            0 0 9px $blueViolet,
+            0 0 9px $blueViolet inset;
+    }
+}
+
+.badge {
+    z-index: 1;
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 100px;
+    width: 237px;
+    border-radius: 30px;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+    padding: 2px 5px;
+}
+
+.borderBlur {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    transition: border 0.3s ease-in-out, box-shadow 0.6s ease-out;
+}
+
+.badgeLogo {
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    background-color: $chineseBlack;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}

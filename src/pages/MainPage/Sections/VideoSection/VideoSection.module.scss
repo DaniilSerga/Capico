@@ -1,0 +1,15 @@
+@import 'styles/colors';
+
+.anotherSection {
+    position: relative;
+    z-index: 1;
+    border-radius: 40px;
+    background-color: $black;
+    height: 500px;
+    padding: 75px 0;
+
+    & > h2 {
+        text-align: center;
+        font-size: 70px;
+    }
+}
