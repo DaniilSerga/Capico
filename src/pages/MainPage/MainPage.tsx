@@ -1,5 +1,12 @@
 import React, {FC} from 'react';
-import {BenefitsSection, HeadingSection, MultiChartSection, NumbersSection, VideoSection} from './Sections';
+import {
+    BenefitsSection, 
+    HeadingSection, 
+    MultiChartSection, 
+    NumbersSection, 
+    PortfolioSection, 
+    VideoSection
+} from './Sections';
 
 const MainPage: FC = () => {
     return (
@@ -9,6 +16,7 @@ const MainPage: FC = () => {
             <NumbersSection />
             <BenefitsSection />
             <MultiChartSection />
+            <PortfolioSection />
         </>
     );
 };

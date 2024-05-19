@@ -1,0 +1,77 @@
+@import 'styles/colors';
+@import 'styles/mixins';
+@import 'styles/animations';
+
+.sectionContainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 135px 23px 220px;
+    background: url('../../../../assets/images/portfolioBackground.webp');
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    z-index: 3;
+    position: absolute;
+    background: url('../../../../assets/images/gradientBackground.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    width: 100%;
+    height: 500px;
+    transform: translateX(23px);
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 135px;
+    align-items: flex-start;
+}
+
+.heading {
+    display: flex;
+    width: min-content;
+    flex-direction: column;
+    
+    & > h2 {
+        @include gradientText($gradientHeadingInverted);
+        text-wrap: nowrap;
+        margin: 2px 70px 0 45px;
+        font-size: 130px;
+        font-weight: 300;
+        line-height: 120.9px;
+        letter-spacing: -0.04em;
+    }
+}
+
+.headingBorder {
+    width: 100%;
+    height: 50px;
+    border-radius: 20px 20px 0 0;
+    border: 1px solid $amethyst200;
+    border-bottom: 0;
+}
+
+.descriptionContainer {
+    display: flex;
+    margin-left: 45px;
+
+    & > p:first-of-type {
+        font-size: 40px;
+        line-height: 37.2px;
+        letter-spacing: -0.04em;
+    }
+
+    & > p:last-of-type {
+        margin-top: 7px;
+        color: $crayola;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 18.54px;
+        letter-spacing: -0.03em;
+        transform: translateX(-11px);
+    }
+}
