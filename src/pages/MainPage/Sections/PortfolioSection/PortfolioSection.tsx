@@ -17,7 +17,7 @@ const PortfolioSection: FC = () => {
                 </div>
             </div>
 
-            <div className={styles.overlay}></div>
+            <div className={styles.overlay2}></div>
         </section>
     );
 };

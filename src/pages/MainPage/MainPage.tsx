@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import {
     BenefitsSection, 
+    ComfortableWorkSection, 
     HeadingSection, 
     MultiChartSection, 
     NumbersSection, 
@@ -17,6 +18,7 @@ const MainPage: FC = () => {
             <BenefitsSection />
             <MultiChartSection />
             <PortfolioSection />
+            <ComfortableWorkSection />
         </>
     );
 };

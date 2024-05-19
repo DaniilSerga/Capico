@@ -4,6 +4,7 @@ import {NumbersSection} from './NumbersSection'
 import {BenefitsSection} from './BenefitsSection';
 import {MultiChartSection} from './MultiChartSection';
 import {PortfolioSection} from './PortfolioSection';
+import {ComfortableWorkSection} from './ComfortableWorkSection';
 
 export {
     BenefitsSection, 
@@ -11,5 +12,6 @@ export {
     MultiChartSection, 
     VideoSection, 
     NumbersSection, 
-    PortfolioSection
+    PortfolioSection,
+    ComfortableWorkSection
 };
