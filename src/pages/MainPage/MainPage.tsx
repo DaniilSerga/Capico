@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {HeadingSection, NumbersSection, VideoSection} from './Sections';
+import {BenefitsSection, HeadingSection, MultiChartSection, NumbersSection, VideoSection} from './Sections';
 
 const MainPage: FC = () => {
     return (
@@ -7,6 +7,8 @@ const MainPage: FC = () => {
             <HeadingSection />
             <VideoSection />
             <NumbersSection />
+            <BenefitsSection />
+            <MultiChartSection />
         </>
     );
 };

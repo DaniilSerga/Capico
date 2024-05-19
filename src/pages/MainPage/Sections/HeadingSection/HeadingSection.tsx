@@ -22,7 +22,6 @@ const HeadingSection: FC = () => {
                     <img src={longArrowRight} alt="" />
                 </button>
 
-
                 <div className={styles.badgesContainer}>
                     <h3>Trade for free on your<br />favourite exhanges</h3>
                     <ul className={styles.badgesList}>
@@ -39,7 +38,6 @@ const HeadingSection: FC = () => {
             </div>
 
             <div className={styles.background}></div>
-            <div className={styles.backgroundSecondary}></div>
         </section>
     );
 };

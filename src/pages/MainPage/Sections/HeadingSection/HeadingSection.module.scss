@@ -17,15 +17,9 @@
     right: 0;
     height: 100px;
     width: 100%;
-    filter: blur(100px);
     background-color: $shockingPink;
     transform: translateY(150%);
-}
-
-.backgroundSecondary {
-    @extend .background;
-    transform: translate(60%, 200%);
-    background-color: blue;
+    animation: impulse 3s linear infinite;
 }
 
 .content {
@@ -46,6 +40,7 @@
 
     & > h2 {
         @include gradientText($gradientHeading);
+        animation: type 1s linear;
     }
 }
 
@@ -128,4 +123,27 @@
     border-radius: 30px;
     width: 100%;
     height: 100%;
+}
+
+@keyframes type {
+    from {
+        background-position-x: -400px;
+        background-position-y: -400px;
+    } 
+    to {
+        background-position-x: 0;
+        background-position-y: 0;
+    }
+}
+
+@keyframes impulse {
+    0% {
+        filter: blur(100px);
+    }
+    50% {
+        filter: blur(300px);
+    }
+    100% {
+        filter: blur(100px);
+    }
 }

@@ -5,7 +5,6 @@ import styles from './NumbersSection.module.scss';
 const NumbersSection: FC = () => {
     return (
         <section className={styles.sectionContainer}>
-            {/* <div className={styles.overlay}></div> */}
             <div className={styles.heading}>
                 <h2>numbers</h2>
                 <h2>Manage positions on</h2>

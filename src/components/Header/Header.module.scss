@@ -22,6 +22,7 @@
         text-decoration: none;
         letter-spacing: -3%;
         transition: all 0.2s;
+        box-shadow: 0 0 0 0 transparent;
 
         &:visited {
             color: $white;
@@ -38,8 +39,6 @@
     align-items: center;
     gap: 8px;
     padding: 15px 23px 15px 35px;
-    // padding-left: 37px;
-    // padding-right: 25px;
     border-radius: 42px;
     background-color: $grape;
     color: $white;

@@ -1,0 +1,73 @@
+@import 'styles/colors';
+@import 'styles/mixins';
+@import 'styles/animations';
+
+.sectionContainer {
+    background-image: url('../../../../assets/images/benefitsBackground.png');
+    background-repeat: no-repeat;
+    padding-bottom: 341px;
+    animation: backgroundLevitating 5s ease-in-out infinite;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px;
+    padding: 14px 17px 0;
+    @include gradientHeadingBorder(linear-gradient(45deg, $white, $grape));
+
+    & > h2:first-of-type {
+        font-size: 60px;
+        line-height: 93%;
+        letter-spacing: -0.4px;
+    }
+    
+    & > h2:last-of-type {
+        color: $philippineGray;
+        font-size: 15px;
+        line-height: 103%;
+        letter-spacing: -0.04em;
+    }
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 150px;
+    margin-top: 166px;
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 100px 0;
+    }
+
+    & > div > h3 {
+        font-size: 130px;
+        font-weight: 300;
+        line-height: 120.9px;
+        letter-spacing: -0.04em;
+    }
+}
+
+.descriptionContainer {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+
+    & > h4 {
+        font-size: 40px;
+        line-height: 37.2px;
+        letter-spacing: -0.04em;
+    }
+
+    & > p {
+        color: $crayola;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 18.54px;
+        letter-spacing: -0.04em;
+    }
+}

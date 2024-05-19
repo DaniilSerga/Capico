@@ -1,0 +1,54 @@
+@import 'styles/colors';
+@import 'styles/mixins';
+@import 'styles/animations';
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 109px;
+    background-image: url('../../../../assets/images/multiChartBackground.png');
+    background-position: right 25px;
+    background-repeat: no-repeat;
+    padding-bottom: 187px;
+}
+
+.heading {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    width: min-content;
+
+    & > h2 {
+        @include gradientText($gradientHeadingInverted);
+        font-size: 130px;
+        font-weight: 300;
+        line-height: 120.9px;
+        letter-spacing: -0.04em;
+        margin: 0 76px 0 36px;
+    }
+}
+
+.headingBorder {
+    height: 50px;
+    border-radius: 20px 20px 0 0;
+    border: 1px solid $amethyst;
+    border-bottom: 0;
+    padding-right: 40px;
+}
+
+.descriptionContainer {
+    margin-left: 78px;
+    max-width: 571px;
+
+    & > p {
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 43.2px;
+        letter-spacing: -0.04em;
+
+        & > b {
+            font-weight: 500;
+        }
+    }
+}

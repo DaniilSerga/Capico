@@ -3,28 +3,18 @@
 
 .sectionContainer {
     position: relative;
-    padding: 0 25px;
+    margin-top: 51px;
     background-image: url('../../../../assets/images/numbersBackground.png');
-    background-position: center center;
+    background-position: center 40px;
     background-size: cover;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    // background: linear-gradient(30deg, $violet, $black);
-}
-
 .heading {
-    margin-top: 1px;
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 17px;
+    margin: 0 25px;
+    padding: 14px 17px 0;
     @include gradientHeadingBorder(linear-gradient(45deg, $white, $grape));
 
     & > h2:first-of-type {
@@ -44,7 +34,7 @@
 .content {
     display: grid;
     padding: 72px 25px 129px 81px;
-    grid-template: repeat(2, 1fr) / repeat(auto-fill, 1fr);
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
 }
 
 .asideInfo {
@@ -104,15 +94,12 @@
     padding: 42px 0 32px 30px;
     width: 376px;
     height: 292px;
-    // background: linear-gradient($black, $black) padding-box,
-    //     linear-gradient(120deg, $white, $grape) border-box;
-    // border: 1px solid transparent;
-    // border-radius: 40px;
     border: 1px solid transparent;
     background: transparent;
-    // box-shadow: inset 0px 33px 25px 0 #000;
-    box-shadow: inset 0 0 0 2px $grape;
+    box-shadow: inset 0 0 0 1px rgba($grape, 0.8),
+        inset 0 0 0 1px rgba($white, 0.6);
     border-radius: 40px;
+    transition: all 0.3s ease-out;
 
     & > p:first-child {
         font-size: 80px;
@@ -125,5 +112,9 @@
         font-size: 20px;
         line-height: 20.6px;
         letter-spacing: -0.04em;
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
 }
