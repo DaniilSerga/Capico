@@ -1,4 +1,5 @@
 @import 'styles/colors';
+@import 'styles/mixins';
 
 .sectionContainer {
     z-index: 0;
@@ -44,9 +45,7 @@
     }
 
     & > h2 {
-        background: $gradiend100;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include gradientText($gradientHeading);
     }
 }
 

@@ -1,0 +1,14 @@
+@mixin gradientText($gradient) {
+    background: $gradient;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin gradientHeadingBorder($gradient) {
+    background: linear-gradient($black, $black) padding-box, 
+                $gradient border-box;
+    border-radius: 20px 20px 0 0;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
