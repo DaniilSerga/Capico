@@ -2,7 +2,32 @@
 @import 'styles/mixins';
 
 .sectionContainer {
-    padding: 44px 0 141px;
+    padding: 44px 0 117px;
     border-radius: 40px 40px 0 0;
     background-color: $black;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+
+    & > h2 {
+        @include gradientText($gradientHeadingInverted);
+        margin-left: 15px;
+        font-size: 90px;
+        line-height: 92.7px;
+        letter-spacing: -0.02em;
+        transform: translateY(-24px);
+    }
+
+    // 52px overflow y+
+}
+
+.headingBorder {
+    height: 50px;
+    border-radius: 20px 20px 0 0;
+    border: 1px solid $jacarta;
+    border-bottom: 0;
+    padding-right: 40px;
 }

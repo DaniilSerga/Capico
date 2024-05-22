@@ -1,3 +1,4 @@
 import BADGES from "./badges";
+import WORK_CARDS from "./workCards";
 
-export {BADGES};
+export {BADGES, WORK_CARDS};

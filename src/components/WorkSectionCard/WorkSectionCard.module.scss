@@ -1,0 +1,40 @@
+@import 'styles/colors';
+@import 'styles/mixins';
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 343px;
+    height: 455px;
+    box-sizing: border-box;
+    padding: 49px 39px 36px;
+    border: 1px solid $jacarta;
+    border-radius: 40px;
+
+    & > p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: -0.04em;
+    }
+}
+
+.cardHeading {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+
+    & > h5 {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 31.62px;
+        letter-spacing: -0.04em;
+    }
+}
+
+.iconContainer {
+    max-height: 108px;
+    width: auto;
+    height: 100%;
+}
