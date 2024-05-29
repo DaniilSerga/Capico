@@ -36,16 +36,15 @@
 
 .progressBarContainer {
     height: 5px;
+    margin: 53px 208px 0;
     border-radius: 20px;
-    margin: 0 208px;
     box-sizing: border-box;
-    margin-top: 53px;
     background-color: #101010;
 }
 
 .progressBar {
     height: 100%;
-    background-color: $amethyst;
+    background-color: $jacarta;
     transition: 0.4s ease-in-out;
 }
 
