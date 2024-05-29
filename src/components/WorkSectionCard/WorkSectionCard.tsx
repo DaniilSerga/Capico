@@ -3,9 +3,9 @@ import { Props } from './type';
 
 import styles from './WorkSectionCard.module.scss';
 
-const WorkSectionCard = React.forwardRef<HTMLDivElement, Props>(({item}, ref) => {
+const WorkSectionCard:FC<Props> = (({item}) => {
     return (
-        <div ref={ref} className={styles.cardContainer}>
+        <div className={styles.cardContainer}>
             <div className={styles.cardHeading}>
                 <h5>{item.title}</h5>
 
