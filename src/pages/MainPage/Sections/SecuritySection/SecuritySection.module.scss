@@ -1,0 +1,97 @@
+@import 'styles/colors';
+@import 'styles/mixins';
+
+.sectionContainer {
+    padding: 60px 25px 98px;
+    
+}
+
+.headingBorder {
+    @include gradientHeadingBorder(linear-gradient(96.63deg, #FFFFFF 5.78%, #5F29B7 72.85%));
+    height: 50px;
+}
+
+.headingContent {
+    margin: -30px 25px 0;
+    display: flex;
+    justify-content: space-between;
+
+    & > h2 {
+        color: $white;
+        font-size: 90px;
+        font-weight: 500;
+        line-height: 92.7px;
+        letter-spacing: -0.04em;
+    }
+
+    & > p {
+        color: $romanSilver;
+        font-size: 15px;
+        line-height: 15.45px;
+        letter-spacing: -0.04em;
+    }
+}
+
+.contentContainer {
+    display: grid;
+    margin-top: -26px;
+    padding: 0 151px;
+    grid-template: repeat(2, 1fr) / 1fr repeat(2, auto);
+    gap: 31px 41px;
+    background: url('../../../../assets/images/securityBackground.webp');
+    background-position: left center;
+    background-repeat: no-repeat;
+
+    & > :nth-child(1) {
+        grid-column: 2;
+    }
+
+    & > :nth-child(2) {
+        grid-column: 3;
+    }
+
+    & > :nth-child(3) {
+        grid-area: 2 / 2;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 96px;
+    width: max-content;
+    padding: 45px 59px 40px 39px;
+    border: 1px solid $jacarta;
+    border-radius: 40px;
+    transition: all 0.3s;
+
+    & > p {
+        color: $lavenderWeb;
+        max-width: 206px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.6px;
+        letter-spacing: -0.04em;
+    }
+    
+    & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        align-items: flex-start;
+    }
+
+    & > div > h5 {
+        color: $white;
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 31.62px;
+        letter-spacing: -0.04em;
+    }
+
+    &:hover {
+        box-shadow: 0 0 15px 5px $jacarta;
+        transform: scale(1.1);
+    }
+}

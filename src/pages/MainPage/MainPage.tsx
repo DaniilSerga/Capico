@@ -7,6 +7,7 @@ import {
     MultiChartSection, 
     NumbersSection, 
     PortfolioSection, 
+    SecuritySection, 
     TradeSection, 
     VideoSection 
 } from './Sections';
@@ -23,6 +24,7 @@ const MainPage: FC = () => {
             <ComfortableWorkSection />
             <FeaturesSection />
             <TradeSection />
+            <SecuritySection />
         </>
     );
 };

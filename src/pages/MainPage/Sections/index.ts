@@ -7,11 +7,13 @@ import {PortfolioSection} from './PortfolioSection';
 import {ComfortableWorkSection} from './ComfortableWorkSection';
 import {FeaturesSection} from './FeaturesSection';
 import {TradeSection} from './TradeSection';
+import {SecuritySection} from './SecuritySection';
 
 export {
     BenefitsSection,
     HeadingSection,
     TradeSection,
+    SecuritySection,
     MultiChartSection,
     VideoSection,
     NumbersSection,
