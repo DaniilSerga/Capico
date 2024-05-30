@@ -4,7 +4,6 @@ import arrow from 'assets/icons/arrowRightLong.svg';
 import styles from './FeatureItem.module.scss';
 
 const FeatureItem: FC<Props> = ({activeIndex, feature}) => {
-    console.log(feature.id, feature.id === activeIndex);
     return (
         <div className={styles.cardContainer}>
             <div className={styles.iconWrapper}>
