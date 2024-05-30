@@ -6,6 +6,7 @@ import {
     HeadingSection, 
     MultiChartSection, 
     NumbersSection, 
+    PartnersSection, 
     PortfolioSection, 
     SecuritySection, 
     TradeSection, 
@@ -25,6 +26,7 @@ const MainPage: FC = () => {
             <FeaturesSection />
             <TradeSection />
             <SecuritySection />
+            <PartnersSection />
         </>
     );
 };

@@ -8,13 +8,17 @@ import {ComfortableWorkSection} from './ComfortableWorkSection';
 import {FeaturesSection} from './FeaturesSection';
 import {TradeSection} from './TradeSection';
 import {SecuritySection} from './SecuritySection';
+import {PartnersSection} from './PartnersSection';
+import {TrialSection} from './TrialSection';
 
 export {
     BenefitsSection,
     HeadingSection,
     TradeSection,
+    PartnersSection,
     SecuritySection,
     MultiChartSection,
+    TrialSection,
     VideoSection,
     NumbersSection,
     PortfolioSection,
