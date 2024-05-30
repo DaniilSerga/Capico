@@ -42,9 +42,9 @@
     list-style-type: none;
 
     & > li {
-        cursor: pointer;
         position: relative;
         font-size: 24px;
+        font-weight: 500;
         line-height: 36px;
         letter-spacing: -0.01em;
         transition: all 0.3s;
@@ -61,17 +61,20 @@
             background-color: transparent;
             transition: all 0.3s;
         }
+
+        &:not(.activeFeature):hover {
+            color: rgba($white, 0.7);
+        }
     }
 }
 
 .inactiveFeature {
+    cursor: pointer;
     color: $blueVioletCrayola;
-    font-weight: 500;
 }
 
 .activeFeature {
     color: $white;
-    font-weight: 600;
 
     &::before {
         background-color: $white !important;
