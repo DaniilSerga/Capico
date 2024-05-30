@@ -1,2 +1,145 @@
 @import 'styles/colors';
 
+.container {
+    padding: 49px 0 0;
+    background: $gradientFeaturesSection;
+    border-radius: 41px;
+
+    & > div:last-of-type {
+        display: flex;
+    }
+}
+
+.sectionHeading {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 44px;
+
+    & > h2 {
+        font-size: 70px;
+        line-height: 65.1px;
+        letter-spacing: -0.04em;
+        font-weight: 600;
+    }
+
+    & > p {
+        font-size: 15px;
+        line-height: 15.45px;
+        letter-spacing: -0.04em;
+        font-weight: 400;
+    }
+}
+
+.contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 158px 75px 107px;
+    transform: translateY(-12px);
+}
+
+.featuresList {
+    list-style-type: none;
+
+    & > li {
+        cursor: pointer;
+        position: relative;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.01em;
+        transition: all 0.3s;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -46px;
+            width: 35px;
+            height: 3px;
+            margin: auto 0;
+            background-color: transparent;
+            transition: all 0.3s;
+        }
+    }
+}
+
+.inactiveFeature {
+    color: $blueVioletCrayola;
+    font-weight: 500;
+}
+
+.activeFeature {
+    color: $white;
+    font-weight: 600;
+
+    &::before {
+        background-color: $white !important;
+    }
+}
+
+// SWIPER
+.sliderWrapper {
+    display: flex;
+    gap: 95px;
+    align-items: center;
+}
+
+.swiper {
+    padding: 160px 0;
+}
+
+.swiperWrapper > div:has(+ :global(.swiper-slide-fully-visible)) > div,
+.swiperWrapper > :global(.swiper-slide-fully-visible) + div > div:first-of-type {
+    opacity: 0.2;
+    border: 1px solid $white;
+}
+
+.swiperWrapper > :global(.swiper-slide-fully-visible) > div {
+    opacity: 1;
+    background-color: $plumpPurple;
+}
+
+.slide {
+    width: auto;
+
+    & > div {
+        opacity: 0;
+    }
+}
+
+.navigationButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    & > button {
+        cursor: pointer;
+        padding: 45px 25px;
+        border-radius: 45px;
+        background-color: transparent;
+        border: 1px solid rgba($white, 0.3);
+        outline: none;
+        transition: all 0.3s;
+    }
+    
+    & > button:last-of-type > img {
+        transform: rotate(180deg);
+    }
+
+    & > button:last-of-type {
+        border-top: 4px solid rgba($white, 0.3);
+
+        &:hover {
+            border-top: 4px solid $white;
+        }
+    }
+    
+    & > button:first-of-type {
+        border-bottom: 4px solid rgba($white, 0.3);
+
+        &:hover {
+            border-bottom: 4px solid $white;
+        }
+    }
+}
