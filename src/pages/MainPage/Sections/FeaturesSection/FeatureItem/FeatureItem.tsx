@@ -1,9 +1,10 @@
 import React, {FC} from 'react';
-import { Props } from './type';
+import {Props} from './type';
 import arrow from 'assets/icons/arrowRightLong.svg';
 import styles from './FeatureItem.module.scss';
 
-const FeatureItem: FC<Props> = ({feature}) => {
+const FeatureItem: FC<Props> = ({activeIndex, feature}) => {
+    console.log(feature.id, feature.id === activeIndex);
     return (
         <div className={styles.cardContainer}>
             <div className={styles.iconWrapper}>
@@ -15,7 +16,7 @@ const FeatureItem: FC<Props> = ({feature}) => {
 
                 <p className={styles.description}>{feature.description}</p>
 
-                <button className={styles.learnMore}>
+                <button disabled={activeIndex !== feature.id} className={styles.learnMore}>
                     Learn more
                     <img src={arrow} alt="" />
                 </button>

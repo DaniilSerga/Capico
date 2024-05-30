@@ -51,7 +51,6 @@ const FeaturesSection: FC = () => {
 
                 <div className={styles.sliderWrapper}>
                     <Swiper
-                        
                         ref={swiperRef}
                         effect={'coverflow'}
                         grabCursor
@@ -73,7 +72,7 @@ const FeaturesSection: FC = () => {
                         wrapperClass={styles.swiperWrapper}>
                         {FEATURES_CARDS.map((feature) => (
                             <SwiperSlide className={styles.slide} key={feature.id}>
-                                <FeatureItem feature={feature} />
+                                <FeatureItem activeIndex={activeIndex} feature={feature} />
                             </SwiperSlide>
                         ))}
                     </Swiper>
