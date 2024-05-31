@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Capico/static/css/main.28848c67.css",
-    "main.js": "/Capico/static/js/main.6f38cca7.js",
+    "main.js": "/Capico/static/js/main.3308a846.js",
     "static/js/453.c30b9b3e.chunk.js": "/Capico/static/js/453.c30b9b3e.chunk.js",
     "static/media/backgroundVideo.mp4": "/Capico/static/media/backgroundVideo.0e26e523c951eda74279.mp4",
     "static/media/headingBackground.webp": "/Capico/static/media/headingBackground.d9747f640a2af58f2e43.webp",
@@ -56,11 +56,11 @@
     "static/media/arrowRightLong.svg": "/Capico/static/media/arrowRightLong.de6469f542d425121ba4e341b88578ba.svg",
     "static/media/arrowLeftShort.svg": "/Capico/static/media/arrowLeftShort.1c6e44d2ce8223968849aa809a2954cc.svg",
     "main.28848c67.css.map": "/Capico/static/css/main.28848c67.css.map",
-    "main.6f38cca7.js.map": "/Capico/static/js/main.6f38cca7.js.map",
+    "main.3308a846.js.map": "/Capico/static/js/main.3308a846.js.map",
     "453.c30b9b3e.chunk.js.map": "/Capico/static/js/453.c30b9b3e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.28848c67.css",
-    "static/js/main.6f38cca7.js"
+    "static/js/main.3308a846.js"
   ]
 }
