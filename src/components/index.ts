@@ -1,4 +1,5 @@
 import {Header} from './Header';
 import {WorkSectionCard} from './WorkSectionCard';
+import {Footer} from './Footer';
 
-export {Header, WorkSectionCard};
+export {Footer, Header, WorkSectionCard};

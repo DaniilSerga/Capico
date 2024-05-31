@@ -16,7 +16,7 @@ import {
 
 const MainPage: FC = () => {
     return (
-        <>
+        <main>
             <HeadingSection />
             <VideoSection />
             <NumbersSection />
@@ -29,7 +29,7 @@ const MainPage: FC = () => {
             <SecuritySection />
             <PartnersSection />
             <TrialSection />
-        </>
+        </main>
     );
 };
 

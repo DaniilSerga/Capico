@@ -1,15 +1,16 @@
 import React from 'react';
 import './App.scss';
 import {MainNavigator} from 'pages';
-import { Header } from 'components';
+import {Footer, Header} from 'components';
 
-function App() {
+const App = () => {
     return (
         <div className="App">
             <Header />
-            <main>
-                <MainNavigator />
-            </main>
+
+            <MainNavigator />
+
+            <Footer />
         </div>
     );
 }

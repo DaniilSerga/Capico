@@ -1,0 +1,150 @@
+@import 'styles/colors';
+@import 'styles/mixins';
+
+.footerContainer {
+    display: grid;
+    grid-template: 1fr / repeat(5, 1fr);
+    gap: 0 100px;
+    padding: 36px 53px 70px;
+    background-color: $eerieBlack;
+    border-radius: 40px 40px 0 0;
+
+    & > div:not(.networksListContainer) > h6 {
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 22.77px;
+        letter-spacing: -0.03em;
+    }
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & > p {
+        color: $romanSilver;
+        font-size: 17px;
+        line-height: 17px;
+        letter-spacing: -0.04em;
+    }
+}
+
+.blockHeading {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 22.77px;
+    letter-spacing: -0.03em;
+}
+
+.networksListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    & > h6 {
+        margin-top: 15px;
+        color: $romanSilver;
+        font-size: 17px;
+        line-height: 17px;
+        letter-spacing: -0.04em;
+        text-align: left;
+    }
+
+    & > a {
+        margin-top: 36px;
+        color: $white;
+        font-size: 17px;
+        line-height: 17px;
+        letter-spacing: -0.04em;
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+
+.networksList {
+    display: flex;
+    gap: 9px;
+    align-items: flex-start;
+    list-style-type: none;
+
+    & > li {
+        transition: all 0.2s;
+    }
+
+    & > li:hover {
+        opacity: 0.6;
+    }
+
+    & > li:nth-child(4) > a > p {
+        color: $white;
+    }
+    
+    & > li:nth-child(5) > a > p {
+        color: $lavenderIndigo;
+    }
+
+    & > li > a:has(> p) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        text-decoration: none;
+        
+        & > p {
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 10px;
+            letter-spacing: -0.04em;
+        }
+    }
+}
+
+.platformContainer,
+.documentsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.textList {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style-type: none;
+
+    & > li > a {
+        color: $romanSilver;
+        font-size: 13px;
+        line-height: 13px;
+        letter-spacing: -0.01em;
+        text-decoration: none;
+        text-transform: none;
+        transition: all 0.2s;
+
+        &:hover {
+            color: rgba($romanSilver, 0.6);
+        }
+    }
+}
+
+.authBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    & > a {
+        color: $white;
+        font-size: 23px;
+        font-weight: 500;
+        line-height: 22.77px;
+        letter-spacing: -0.03em;
+        text-decoration: none;
+        text-transform: none;
+        transition: all 0.2s;
+
+        &:hover {
+            color: rgba($white, 0.6);
+        }
+    }
+}
