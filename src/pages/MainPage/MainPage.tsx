@@ -10,6 +10,7 @@ import {
     PortfolioSection, 
     SecuritySection, 
     TradeSection, 
+    TrialSection, 
     VideoSection 
 } from './Sections';
 
@@ -27,6 +28,7 @@ const MainPage: FC = () => {
             <TradeSection />
             <SecuritySection />
             <PartnersSection />
+            <TrialSection />
         </>
     );
 };

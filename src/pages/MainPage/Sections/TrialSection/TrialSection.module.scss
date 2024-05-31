@@ -2,5 +2,86 @@
 @import 'styles/mixins';
 
 .sectionContainer {
-    
+    padding: 41px 25px 102px;
+    background: url('../../../../assets/images/trialBackground.webp');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sectionHeading > h5 {
+    color: $philippineGray;
+    font-size: 15px;
+    line-height: 15.45px;
+    letter-spacing: -0.04em;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 107px;
+
+    & > h2 {
+        color: transparent;
+        font-size: 100px;
+        line-height: 93px;
+        letter-spacing: -0.04em;
+        text-align: center;
+        background: linear-gradient(89.92deg, #FFFFFF 10.08%, #5F29B7 98.33%);
+        background-clip: text;
+    }
+}
+
+.createAccountButton {
+    cursor: pointer;
+    position: relative;
+    align-self: center;
+    margin-top: 295px;
+    padding: 46px 187px 44px 110px;
+    color: $white;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 41.85px;
+    letter-spacing: -0.04em;
+    border: none;
+    border-radius: 70px;
+    background-color: $grape;
+
+    &:hover > div {
+        background-color: $white;
+        border-color: $white;
+        box-shadow: 0 0 0 10px $white;
+
+        & > img:last-of-type {
+            display: unset;
+        }
+        
+        & > img:first-of-type {
+            display: none;
+        }
+    }
+}
+
+.buttonIconWrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 25px;
+    display: grid;
+    place-items: center;
+    width: 83px;
+    height: 83px;
+    margin: auto 0;
+    border-radius: 100%;
+    border: 1px solid rgba($white, 0.4);
+    transition: all 0.3s;
+
+    & > img {
+        transform: translateX(-25px);
+    }
+
+    & > img:last-of-type {
+        display: none;
+    }
 }

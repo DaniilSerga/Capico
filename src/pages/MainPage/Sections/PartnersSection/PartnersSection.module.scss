@@ -4,10 +4,7 @@
 .sectionContainer {
     padding: 31px 25px 101px;
     background: linear-gradient(200deg, #7061AA -34.49%, #340E73 85.02%);
-}
-
-.sectionHeading {
-
+    border-radius: 41px;
 }
 
 .headingBorder {
@@ -60,6 +57,7 @@
 }
 
 .partnerItem {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     gap: 15px;

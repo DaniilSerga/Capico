@@ -6,7 +6,7 @@ import styles from './PartnersSection.module.scss';
 const PartnersSection: FC = () => {
     return (
         <section className={styles.sectionContainer}>
-            <div className={styles.sectionHeading}>
+            <div>
                 <div className={styles.headingBorder}></div>
 
                 <div className={styles.headingContent}>
