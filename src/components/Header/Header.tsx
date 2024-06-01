@@ -19,7 +19,7 @@ const Header: FC = () => {
                 <Link to="not-found">academy</Link>
                 
                 {/* Sign in */}
-                <Link to="/sign-in" className={styles.signIn}>
+                <Link to="/not-found" className={styles.signIn}>
                     sign in
                     <img src={arrowRight} alt=""/>
                 </Link>

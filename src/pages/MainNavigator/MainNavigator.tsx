@@ -6,9 +6,9 @@ const MainNavigator: FC = () => {
     return (
         <Routes>
             <Route index path='/' element={<MainPage />} />
-            <Route path='pricing' element={<PricingPage />} />
-            <Route path='partners' element={<PartnersPage />} />
-            <Route path='not-found' element={<NotFoundPage />} />
+            <Route path='/pricing' element={<PricingPage />} />
+            <Route path='/partners' element={<PartnersPage />} />
+            <Route path='/not-found' element={<NotFoundPage />} />
         </Routes>
     );
 };
