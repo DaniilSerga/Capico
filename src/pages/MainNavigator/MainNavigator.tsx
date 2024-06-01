@@ -5,10 +5,10 @@ import { Route, Routes } from 'react-router-dom';
 const MainNavigator: FC = () => {
     return (
         <Routes>
-            <Route path='/' element={<MainPage />} />
-            <Route path='/pricing' element={<PricingPage />} />
-            <Route path='/partners' element={<PartnersPage />} />
-            <Route path='/not-found' element={<NotFoundPage />} />
+            <Route index path='/' element={<MainPage />} />
+            <Route path='pricing' element={<PricingPage />} />
+            <Route path='partners' element={<PartnersPage />} />
+            <Route path='not-found' element={<NotFoundPage />} />
         </Routes>
     );
 };

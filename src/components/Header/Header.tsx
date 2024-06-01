@@ -13,10 +13,10 @@ const Header: FC = () => {
 
             <div className={styles.links}>
                 <Link to="/">features</Link>
-                <Link to="/pricing">prices</Link>
-                <Link to="/partners">partners</Link>
-                <Link to="/not-found">knowledge base</Link>
-                <Link  to="/not-found">academy</Link>
+                <Link to="pricing">prices</Link>
+                <Link to="partners">partners</Link>
+                <Link to="not-found">knowledge base</Link>
+                <Link to="not-found">academy</Link>
                 
                 {/* Sign in */}
                 <Link to="/sign-in" className={styles.signIn}>
