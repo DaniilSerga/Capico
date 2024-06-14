@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/Capico/static/css/main.28848c67.css",
-    "main.js": "/Capico/static/js/main.8a420682.js",
+    "main.css": "/Capico/static/css/main.5f628ad6.css",
+    "main.js": "/Capico/static/js/main.5992ce2e.js",
     "static/js/453.c30b9b3e.chunk.js": "/Capico/static/js/453.c30b9b3e.chunk.js",
     "static/media/backgroundVideo.mp4": "/Capico/static/media/backgroundVideo.0e26e523c951eda74279.mp4",
     "static/media/headingBackground.webp": "/Capico/static/media/headingBackground.d9747f640a2af58f2e43.webp",
     "static/media/trialBackground.webp": "/Capico/static/media/trialBackground.afa1aeca92cea30a7e7e.webp",
     "static/media/tradeBackground.webp": "/Capico/static/media/tradeBackground.8172f7c253b53226eecf.webp",
+    "static/media/notFoundBackground.webp": "/Capico/static/media/notFoundBackground.24cd3bee22c2e1ebd4b5.webp",
     "static/media/numbersBackground.webp": "/Capico/static/media/numbersBackground.6d4fda7bbf42d6dfb164.webp",
     "static/media/Nekst-SemiBold.ttf": "/Capico/static/media/Nekst-SemiBold.c921731d03bd659e3971.ttf",
     "static/media/Nekst-Regular.ttf": "/Capico/static/media/Nekst-Regular.ec8e40c2d276f13999f7.ttf",
@@ -55,12 +56,12 @@
     "static/media/arrowRight.svg": "/Capico/static/media/arrowRight.83462264e1fbab8ea47b728c8659dbde.svg",
     "static/media/arrowRightLong.svg": "/Capico/static/media/arrowRightLong.de6469f542d425121ba4e341b88578ba.svg",
     "static/media/arrowLeftShort.svg": "/Capico/static/media/arrowLeftShort.1c6e44d2ce8223968849aa809a2954cc.svg",
-    "main.28848c67.css.map": "/Capico/static/css/main.28848c67.css.map",
-    "main.8a420682.js.map": "/Capico/static/js/main.8a420682.js.map",
+    "main.5f628ad6.css.map": "/Capico/static/css/main.5f628ad6.css.map",
+    "main.5992ce2e.js.map": "/Capico/static/js/main.5992ce2e.js.map",
     "453.c30b9b3e.chunk.js.map": "/Capico/static/js/453.c30b9b3e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28848c67.css",
-    "static/js/main.8a420682.js"
+    "static/css/main.5f628ad6.css",
+    "static/js/main.5992ce2e.js"
   ]
 }
